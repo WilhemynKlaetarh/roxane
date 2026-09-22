@@ -10,7 +10,7 @@ class Anniversaire(commands.Cog) :
     def __init__(self, bot) :
         self.bot = bot
         self._id_wilhemyn = int(os.environ['ID_WILHEMYN'])
-        if os.path.exists("save/birthdays.bin") :
+        if os.path.exists("../roxane_data/birthdays.bin") :
             self.d_data = self._charger_data("birthdays")
         else :
             self.d_data = {
